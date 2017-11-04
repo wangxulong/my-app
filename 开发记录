@@ -1,0 +1,21 @@
+安装第三方库
+如：jQuery
+1.下载并安装到本地库 npm install jquery --save
+2.引入到项目中
+  修改angular-cli.json中的styles，scripts
+   "styles": [
+          "styles.css",
+          "../node_modules/bootstrap/dist/css/bootstrap.css"
+        ],
+     "scripts": [
+              "../node_modules/jquery/dist/jquery.js",
+              "../node_modules/bootstrap/dist/js/bootstrap.js"
+            ],
+3.类型描述文件
+npm install @types/jquery --save-dev
+npm install @types/bootstrap --save-dev
+这两个文件是让 typeScript认识jquery 和 bootstrap
+-------------------------------------------
+1.创建组件
+ng g component 组件名
+2.
