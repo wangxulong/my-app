@@ -18,4 +18,5 @@ npm install @types/bootstrap --save-dev
 -------------------------------------------
 1.创建组件
 ng g component 组件名
-2.
+------------------------
+Angular Route导航
