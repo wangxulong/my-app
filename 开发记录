@@ -20,3 +20,30 @@ npm install @types/bootstrap --save-dev
 ng g component 组件名
 ------------------------
 Angular Route导航
+
+-----------------------------------------
+
+依赖注入： Dependency Injection 简称 DI
+控制反转：Inversion Of Control 简称：IOC
+
+控制反转 描述 目的：将依赖控制权转移到外部
+依赖注入 描述 手段：如何实现控制反转
+
+通过依赖注入来是实现控制反转
+
+通过providers属性指定注入
+通过constructor构造函数使用provider的service
+
+注入器：负责注入该组件依赖的类，自动通过constructor构造器实现
+提供器：providers(组件或模块的属性)
+providers:[ProductService]
+providers:[{provide:ProductService,useClass:ProductService}]
+
+生成服务：ng g service shard/product
+
+providers：声明在组件时候，只对当前组件和子组件可见；声明在模块时候，对模块中所有组件都可用
+@Injectable()：决定构造函数是否能注入其他的服务
+
+工厂函数作为提供器：
+
+
